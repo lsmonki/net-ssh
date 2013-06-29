@@ -1,4 +1,43 @@
 
+=== 2.6.7 / 11 Apr 2013
+
+* Decreased default packet size to 32768 as described in RFC 4253 [Olipro]
+* Added max_pkt_size and max_win_size options to Net::SSH.start [Olipro]
+
+
+=== 2.6.6 / 03 Mar 2013
+
+* Fix for ruby 2.0 in windows [jansegre]
+
+=== 2.6.5 / 06 Feb 2013
+
+* Fixed path in gemspec [thanks priteau]
+
+=== 2.6.4 / 06 Feb 2013
+
+* Added license info to gemspec [jordimassaguerpla]
+* Added public cert. All gem releases are now signed.
+
+
+=== 2.6.3 / 10 Jan 2013
+
+* Small doc fix and correct error class for PKey::EC key type [Andreas Wolff]
+* Improve test dependencies [Kenichi Kamiya]
+
+
+=== 2.6.2 / 22 Nov 2012
+
+* Net::SSH.start now returns result of block [mhuffnagle]
+* Add stderr handling to Net::SSH::Test [ohrite]
+* Fix Invalid key size in JRuby [ohrite]
+
+
+=== 2.6.1 / 18 Oct 2012
+
+* Remove platform specific jruby dependency from gemspec
+* Changed encoding of file to prevent warnings when generating docs [iltempo]
+
+
 === 2.6.0 / 19 Sep 2012
 
 * Use OpenSSL::PKey.read to read arbitrary private key. [nagachika]
@@ -10,7 +49,7 @@
 
 === 2.5.2 / 25 May 2012
 
-* Fix for Net::SSH::KnownHosts::SUPPORTED_TYPE [Marco Sandrini] 
+* Fix for Net::SSH::KnownHosts::SUPPORTED_TYPE [Marco Sandrini]
 
 === 2.5.1 / 24 May 2012
 
